@@ -14,6 +14,7 @@ Create a pizza object constructor with properties for toppings and size.
 Create a prototype method for the cost of a pizza depending on the selections chosen. Use your own formula for this.
 
 
+
 Technologies Used
 
 HTML CSS Javascript jQuery Bootstrap

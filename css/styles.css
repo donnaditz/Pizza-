@@ -3,6 +3,11 @@
   padding-top: 10px
 }
 img{
-  width:500px
-  height:  auto;
+  width: 1000px
+  height: auto;
+  align-content: center;
+
+}
+h4{
+  text-indent: 65px;
 }

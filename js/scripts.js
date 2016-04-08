@@ -1,11 +1,9 @@
-//--business logic==//
 function Pizza(size, topping){
   this.size = size
   this.topping = topping
 };
 Pizza.prototype.cost = function() {
   var total = 0
-
    if (this.size < 20) {
       total = 18;
     }
@@ -27,7 +25,7 @@ Pizza.prototype.cost = function() {
   };
    return total;
   };
-//--interface logic--//
+
 $(document).ready(function(){
   $("form#new-pizza").submit(function(event){
     event.preventDefault();
