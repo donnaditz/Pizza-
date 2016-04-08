@@ -12,34 +12,39 @@
   <div class="container">
     <div class ="row">
       <form id="new-pizza">
+        <h1></h1>
+        <img  src="http://www.ugospizza.net/wp-content/uploads/2012/11/imagen.jpg" alt="pizza parlor">
+        <h4>Any UGO's 18" GIANT pizza is $18. Select a larger size and add a topping below.</h4>
+      </div>
+      <div class="form-group col-sm-6">
 
-        <div class="form-group col-sm-6">
-          <h1>Perry's Pizza</h1>
-          <p>Classic 8" cheese pizza is $10. Select a different size and topping and see your price. </p>
+        <label for="new-size">Size</label>
+        <select id="new-size" class="form-control">
+          <option value="18">18" GIANT</option>
+          <option value="20">20" GIANT </option>
+          <option value="22">22" GIANT </option>
+        </select>
 
-          <label for="new-size">Size</label>
-          <select id="new-size" class="form-control">
-            <option value="10">10-inch</option>
-            <option value="12">12-inch </option>
-          </select>
-
-          <label for="new-topping">Topping</label>
-          <select id="new-topping" class="form-control">
-            <option value="olives">Olives</option>
-            <option value="mushrooms">Mushrooms</option>
-          </select>
+        <label for="new-topping">Topping</label>
+        <select id="new-topping" class="form-control">
+          <option value="Olives">Olives</option>
+          <option value="Mushrooms">Mushrooms</option>
+        </select>
 
 
-          <button type="submit" class="btn">Check Price</button>
+        <button type="submit" class="btn">Check Price</button>
 
         <div id="price">
-            <h4>Your pizza price:</h4>
-            <ul id="new-price">
-            </ul>
-          </div>
-          </div>
+          <h4>Your pizza price:</h4>
+          <ul id="new-price">
+          </ul>
+          <h4>Your added topping: </h4>
+          <ul id="new-pizza">
+          </ul>
+        </div>
+      </div>
 
-        </div
-      </form>
-    </body>
-    </html>
+      </div
+    </form>
+  </body>
+  </html>

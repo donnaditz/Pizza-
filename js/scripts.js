@@ -1,25 +1,33 @@
+//--business logic==//
 function Pizza(size, topping){
   this.size = size
   this.topping = topping
 };
-Pizza.prototype.cost = function(){
-  var total = 10
+Pizza.prototype.cost = function() {
+  var total = 0
 
-  if (this.size === "10-inch" && this.topping === "olives"){
-    total +2;
-  }
-  else if (this.size === "10-inch" && this.topping === "mushrooms"){
-    total +3;
-  }
-  else if (this.size === "12-inch" && this.topping === "olives"){
-    total +3;
-  }
-  else if (this.size === "12-inch" && this.topping === "mushrooms"){
-    total +4;
-  };
-  return total;
-  };
+   if (this.size < 20) {
+      total = 18;
+    }
+    else {
+    total = 20;
+    };
 
+  if (this.size === "20" && this.topping === "Olives") {
+    total += 2;
+  }
+  else if (this.size === "20" && this.topping === "Mushrooms") {
+    total += 3;
+  }
+  else if (this.size === "22" && this.topping === "Olives") {
+    total += 4;
+  }
+  else if (this.size === "22" && this.topping === "Mushrooms") {
+    total += 5;
+  };
+   return total;
+  };
+//--interface logic--//
 $(document).ready(function(){
   $("form#new-pizza").submit(function(event){
     event.preventDefault();
@@ -33,6 +41,8 @@ $(document).ready(function(){
 
 
   $("ul#new-price").append("<l1>" + "$" + newPizza.cost() + "</l1>");
+
+  $("ul#new-pizza").append("<l1>" + " " + newPizza.topping + "</l1>");
   });
+
 });
-    
