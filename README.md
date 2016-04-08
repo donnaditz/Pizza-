@@ -1,9 +1,6 @@
 Order a Pizza!
-Javascript Object Oriented Javascript Independent project - Week 3
 
 by Gigi Ditz
-
-Description
 
 Create a website for a pizza company where a user can choose one or more individual toppings (cheese, pepperoni, artichoke, anchovy, etc) and a size to order a pizza and see the final cost.
 
@@ -15,8 +12,9 @@ Create a prototype method for the cost of a pizza depending on the selections ch
 
 
 
-Technologies Used
+## Technologies Used
 
-HTML CSS Javascript jQuery Bootstrap
+HTML CSS Javascript jQuery Bootstrap}
 
-Copyright (c) 2016 Gigi Ditz
+
+*{Copyright (c) 2016 Gigi Ditz
